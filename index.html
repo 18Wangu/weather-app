@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="weather.css">
+        <link rel="icon" type="image/png" href="images/icon_weather.png">
+        <title>Weather App</title>
+    </head>
+
+    <body>
+        <div class="w3-quarter"></div>
+
+        <!---------------------- Partie de gauche ---------------------->
+        <div class="caja_meteorologia_iz w3-quarter">
+            <div>
+                <h2>Tuesday</h2> <!-- Utiliser API -->
+                    <p>15 Jan 2023</p> <!-- Utiliser API -->
+                    <p>Paris, FR</p> <!-- Utiliser API -->
+
+                <h1 class="h1_left">29°C</h1> <!-- Utiliser API -->
+                <h3 class="h3_left">Soleado</h3> <!-- Utiliser API -->
+            </div>
+        </div>
+
+        <!---------------------- Partie de droite ---------------------->
+        <div class="caja_meteorologia_de center w3-quarter">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>PRECIPITATION</th>
+                        <td>0%</td> <!-- Utiliser API -->
+                    </tr>
+                    <tr>
+                        <th>HUMIDITY</th>
+                        <td>0%</td> <!-- Utiliser API -->
+                    </tr>
+                    <tr>
+                        <th>WIND</th>
+                        <td>0 km/h</td> <!-- Utiliser API -->
+                    </tr>
+                </tbody>
+            </table>
+
+            <!------------------  les jours ------------------>
+            <div class="clima_Semana">
+                <ul class="center">
+                    <li class="li_active_temp">
+                        <span class="fas fa-sun fa-2x"></span> <!-- Icono -->
+                        <span>Tue</span> <!-- Abreviación del día de la semana -->
+                        <span class="span_temperature">29°C</span> <!-- Temperatura máxima -->
+                    </li>
+                    <li class="li_active_temp">
+                        <span class="fas fa-cloud-moon fa-2x"></span> <!-- Icono -->
+                        <span>Wed</span>
+                        <span class="span_temperature">21°C</span>
+                    </li>
+                    <li class="li_active_temp">
+                        <span class="fas fa-cloud-sun-rain fa-2x"></span> <!-- Icono -->
+                        <span>Thu</span>
+                        <span class="span_temperature">08°C</span>
+                    </li>
+                    <li class="li_active_temp">
+                        <span class="fas fa-cloud-rain fa-2x"></span> <!-- Icono -->
+                        <span>Fri</span>
+                        <span class="span_temperature">19°C</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!------------------ Bouton localisation ------------------>
+            <div id="div_Form">
+                <form>
+                    <input type="button" value="Change Location" class="change_Location center">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
