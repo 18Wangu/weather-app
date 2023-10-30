@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="weather.css">
+        <link rel="icon" type="image/png" href="images/clouds.png">
+        <title>Weather App</title>
+    </head>
+
+    <body>
+        <div class="w3-quarter"></div>
+
+        <!---------------------- Partie de gauche ---------------------->
+        <div class="caja_meteorologia_iz w3-quarter">
+            <div>
+                <h2 class="jour"></h2> <!-- Utiliser API -->
+                    <p class="date"></p> <!-- Utiliser API -->
+                    <p class="lieu"></p> <!-- Utiliser API -->
+
+                <h1 class="temperature"></h1> <!-- Utiliser API -->
+                <h3 class="ciel"></h3> <!-- Utiliser API -->
+            </div>
+        </div>
+
+        <!---------------------- Partie de droite ---------------------->
+        <div class="caja_meteorologia_de center w3-quarter">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>COORDONNÉES</th>
+                        <td class="coordonnees"></td> <!-- Utiliser API -->
+                    </tr>
+                    <tr>
+                        <th>HUMIDITY</th>
+                        <td class="humidity"></td> <!-- Utiliser API -->
+                    </tr>
+                    <tr>
+                        <th>WIND</th>
+                        <td class="wind"></td> <!-- Utiliser API -->
+                    </tr>
+                </tbody>
+            </table>
+
+            <!------------------  les jours ------------------>
+            <div class="clima_Semana">
+                <ul class="center">
+                    <li class="li_active_temp">
+                        <img class="iconeCielJourUn" src="" alt="Météo" /> 
+                        <span class="jour-un"></span> 
+                        <span class="span_temperature jour-un"></span> 
+                    </li>
+                    <li class="li_active_temp">
+                        <img class="iconeCielJourDeux" src="" alt="Météo" />
+                        <span class="jour-deux"></span>
+                        <span class="span_temperature jour-deux"></span>
+                    </li>
+                    <li class="li_active_temp">
+                        <img class="iconeCielJourTrois" src="" alt="Météo" />
+                        <span class="jour-trois"></span>
+                        <span class="span_temperature jour-trois"></span>
+                    </li>
+                    <li class="li_active_temp">
+                        <img class="iconeCielJourQuatre" src="" alt="Météo" />
+                        <span class="jour-quatre"></span>
+                        <span class="span_temperature jour-quatre"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!------------------ Bouton localisation ------------------>
+            <div id="search">
+                <input type="text" placeholder="Enter city name" spellcheck="false" class="search-input">
+                <button type="submit"><img src="images/recherche-icone.webp" alt="search"></button>
+            </div>            
+        </div>
+
+        <script src="weather.js"></script>
+    </body>
+</html>
+
+
